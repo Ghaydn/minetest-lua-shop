@@ -109,7 +109,7 @@ if event.type == "on" then
   update_lcd()
 end
 
---something is in the pipe
+--something is in the tube
 if event.type == "digiline" and event.channel == "item" then
   if #mem.var.gds == 0 then
     table.insert(mem.var.returns, event.msg)
@@ -121,9 +121,16 @@ if event.type == "digiline" and event.channel == "item" then
   local count = tonumber(event.msg:sub(-2))
   if count == nil then count = 1 end
   if count > 9 then
-    item = event.msg:sub(1, -4)
-  elseif count > 1 then
     item = event.msg:sub(1, -3)
+  elseif count > 1 then
+    item = event.msg:sub(1, -2)
+  end
+
+  if item:sub(-1) == " " then
+    item = item:sub(1, -2)
+  else
+    item = event.msg
+    count = 1
   end
   local payment = money[item]
 
