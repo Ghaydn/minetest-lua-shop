@@ -1,7 +1,8 @@
 --
---This software is licensed under GNU AGPL License
+--License: GNU AGPL
+--Copyright Ghaydn (ghaydn@ya.ru), 2021
 --
---You can download it at github.com/Ghaydn/minetest-lua-shop
+--https://github.com/Ghaydn/minetest-lua-shop
 --
 --Shop controller
 --allows you to sell things using different currencies
