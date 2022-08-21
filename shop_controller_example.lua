@@ -1,5 +1,5 @@
 --
---License: GNU GPL
+--License: GNU AGPL
 --Copyright Ghaydn (ghaydn@ya.ru), 2021
 --
 --https://github.com/Ghaydn/minetest-lua-shop
